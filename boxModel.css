@@ -1,0 +1,42 @@
+/* setiap elemen di halaman berada di dalam sebuah 
+box (kotak)
+kita bisa mengatur ukuran dan posisi kotak tersebut
+kita bisa memberi warna / gambar sebagai background
+kotak tersebut. */
+
+/* css box model mendefinisikan kotak yang dihasilkan 
+oleh sebuah elemen, lalu menampilkannya sesuai 
+dengan format visualnya.  */
+/* css box model terdiri dari margin, border, padding, contet  */
+/* 
+        3. Margin : area transparan di sekitar kontak (di luar border)    
+        2. border : area transparan di dalam kotak (antara content dan border)
+        1. padding : batas disekeliling content dan padding
+        0:content  : konten sebenarnya di dalam box, bisa berupa tex atau gambar*/
+div {
+    display: inline-block;
+}
+
+.satu {
+    width: 200px;
+    height: 200px;
+    background-color: lightgreen;
+    margin-left: 100px;
+    margin-top: 30px;
+    margin-bottom: 150px;
+    margin-right: 50px;
+}
+
+.dua {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    margin-top: 50px;
+}
+
+.tiga {
+    width: 50px;
+    height: 50px;
+    background-color: violet;
+    ;
+}

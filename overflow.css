@@ -1,0 +1,17 @@
+/* overflow 
+- value visiable (defaultnya) 
+- auto = css akan otomatis menambahkan scroll 
+ketika kontennya udah ga cukup lagi*/
+
+.satu {
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+}
+
+.dua {
+    width: 120%;
+    height: 200px;
+    background-color: aqua;
+    overflow: auto;
+}

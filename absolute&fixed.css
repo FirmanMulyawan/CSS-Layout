@@ -1,0 +1,48 @@
+/* absolute  */
+/* - ketika kita mengerakkan elemen dengan posisi absolute(menggunakan properti top, left, bottom dan right), ruang yang ditempati oleh elemen tersebut dianggap tidak ada. */
+/* - ketika kita menggerakkan elemen dengan posisi absolute, elemen akan bergerak relatif terhadap posisi dari elemen parent-nya, selama elemen parentnya memiliki posisi yang juga non static 
+- jika kita memberi properti top: 0; dan left:0; maka elemen akan berada di  ujung kiri atas dari elemen parentnya terdekatnya yang non static*/
+body {
+  height: 2000px;
+}
+div {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
+.satu {
+  background-color: lightgreen;
+}
+.dua {
+  /* parentnya adalah body  */
+  background-color: violet;
+  position: absolute;
+  top: 0px;
+  /*right: 0px; */
+  left: 0px;
+  /* top: 100px; */
+}
+.tiga {
+  background-color: gold;
+}
+
+.container {
+  width: 600px;
+  height: 650px;
+  border: 10px solid greenyellow;
+  position: relative;
+}
+
+/* =============================================== */
+.lima {
+  /* akan relative terhadap windows  */
+  /* ketika kita scroll halamannya elemen itu akan terkunci di posisi itu  */
+  background-color: cyan;
+  position: fixed;
+  height: 40px;
+  width: 100%;
+  top: 0px;
+  /*right: 0px; */
+  right: 0px;
+  /* top: 100px; */
+}
